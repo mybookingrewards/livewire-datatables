@@ -28,7 +28,7 @@
     ],
     "require": {
         "php": "^8.0",
-        "livewire/livewire": "^2.4.4|^3.4",
+        "livewire/livewire": "^2.4.4|^3.4|^4.0",
         "maatwebsite/excel": "^3.1",
         "reedware/laravel-relation-joins": "^2.4|^3.0|^4.0|^5.0|^6.0|^7.0|^8.0"
     },

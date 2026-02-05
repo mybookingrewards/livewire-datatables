@@ -64,12 +64,12 @@ class ComplexQuery extends Component
     {
         $this->validateRules();
 
-        $this->emit('complexQuery', count($this->rules[0]['content']) ? $this->rules : null);
+        $this->dispatch('complexQuery', rules: count($this->rules[0]['content']) ? $this->rules : null);
     }
 
     public function saveQuery($name)
     {
-        $this->emitUp('saveQuery', $name, $this->rules);
+        $this->dispatch('saveQuery', name: $name, rules: $this->rules);
     }
 
     public function loadRules($rules)
@@ -80,7 +80,7 @@ class ComplexQuery extends Component
 
     public function deleteRules($id)
     {
-        $this->emitUp('deleteQuery', $id);
+        $this->dispatch('deleteQuery', id: $id);
     }
 
     public function resetQuery()
